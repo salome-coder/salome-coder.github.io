@@ -3,8 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-glaho-arial/css/bpg-glaho-arial.min.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: "BPG Glaho Arial", sans-serif;
+        }
+        #desktop {
+            background-image: url(background1.png);
+            width: 1644px;
+            height: 800px;
+            background-size: cover;
+            position: relative;
+        }
+        p {
+            position: absolute;
+            left: 396px;
+            font-size: 20px;
+            display: none;
+        }
+        p.show {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-
+    <div id="desktop">
+        <p class="show" style="top: 396px">
+            თქვენს პროექტში ფონტის დასამატებლად გამოიყენეთ Bower-ით ან NPM-ით დაყენების მეთოდი.
+        </p>
+    </div>
 </body>
 </html>
