@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <script src="libraries/WickBrush.js"></script>
+    <script src="libraries/brushes/stamp.js"></script>
+    <script src="libraries/brushes/tire.js"></script>
+    <script src="libraries/brushes/square.js"></script>
+    <script src="libraries/pressure.min.js"></script>
+
+    <canvas id="brushCanvas2"></canvas>
+    <canvas id="brushCanvas1"></canvas>
+    <canvas id="stampCanvas"></canvas>
+    <canvas id="debugCanvas"></canvas>
+    
+    <div id="panel">
+      <div id="header">
+        <h1>
+          <a href="https://github.com/Wicklets/WickBrush">WickBrush</a>
+        </h1>
+      </div>
+      <div id="brushes">
+        <div class="brush">
+          <button id="smoothBrush">Smooth Brush</button>
+          <button id="squareBrush">Square Brush</button>
+          <button id="tireBrush">Tire Brush</button>
+          <button id="stampBrush">Stamp Brush</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="tools">
+      <div class="tool" id="clearTool">
+        <button id="clear">Clear</button>
+      </div>
+      <div class="tool" id="sizeTool">
+        <input type="range" min="1" max="100" value="20" id="size" name="size">
+        <label for="size">Size</label>
+      </div>
+      <div class="tool" id="smoothingTool">
+        <input type="range" min="1" max="100" value="50" id="smoothing" name="smoothing">
+        <label for="smoothing">Smoothing</label>
+      </div>
+      <div class="tool" id="pressureTool">
+        <input type="checkbox" id="pressure" name="pressure">
+        <label for="pressure">Pressure</label>
+      </div>
+      <div class="tool" id="stampPressureTool">
+        <input type="checkbox" id="stampPressure" name="stampPressure">
+        <label for="stampPressure">Stamp Pressure</label>
+      </div>
+      <div class="tool" id="color1Tool">
+        <input type="color" id="color1" name="color1" value="#000000">
+        <label for="color1">Fill Color</label>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

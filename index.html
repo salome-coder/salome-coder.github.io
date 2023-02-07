@@ -12,100 +12,201 @@
             height: 100vh;
             font-family: "BPG Glaho Arial", sans-serif;
         }
+
+        .btn {
+            cursor: pointer;
+            opacity: .3;
+            transition: opacity .3s;
+        }
+
+        .btn:hover {
+            opacity: 1;
+        }
+
         #desktop {
             background-image: url(background1.png);
             width: 1644px;
             height: 800px;
             background-size: cover;
             position: relative;
+
         }
+
+
         p {
             position: absolute;
             left: 420px;
             font-size: 20px;
             display: none;
         }
+
         p.show {
             display: block;
         }
+
+        #letter {
+            height: 105px;
+            width: 824px;
+            position: absolute;
+            left: 420px;
+            top: 420px;
+            display: none;
+        }
+
+        #letter.show {
+            display: block;
+        }
+
+        #letter img {
+            position: absolute;
+            height: 100%;
+            cursor: pointer;
+            opacity: 0;
+            transition: all 1s;
+            top: 0;
+        }
+
+        #ghostmini {
+            left: 0;
+        }
+
+        #heartsmini {
+            left: 100px;
+        }
+
+        #starmini {
+            left: 200px;
+        }
+
+        #nolikimini {
+            left: 300px;
+        }
+
+        #letter img.show {
+            opacity: 1;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.show {
+            display: block;
+        }
+
+        #canvas {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #777;
+            width: 400px;
+            height: 300px;
+            display: none;
+        }
+
+        #canvas.show {
+            display: block;
+        }
+
     </style>
 </head>
 <body>
-    <div id="desktop">
-        <p style="top: 200px">
-            გაკვეთილზე ცდილობ, გვერდითა მერხზე მჯდომ მეგობარს ხმა მიაწვდინო.
-        </p>
+<div id="desktop">
+    <div class="section show" id="s1">
+        <p style="top: 200px" class="btn show" data-target="p1">გაკვეთილზე ცდილობ, გვერდითა მერხზე მჯდომ მეგობარს ხმა
+            მიაწვდინო.</p>
 
-        <p style="top: 260px">
-            რვეულიდან ფურცელს ხევ.
-        </p>
-        <p style="top: 320px">
-            პატარა ნაგლეჯზე იწყებ წერილის წერას.
-        </p>
-        <p style="top: 380px">
+        <p style="top: 260px" class="btn" id="p1" data-target="p2">რვეულიდან ფურცელს ხევ.</p>
+        <p style="top: 320px" class="btn" id="p2" data-target="p3">პატარა ნაგლეჯზე იწყებ წერილის წერას.</p>
+        <p style="top: 380px" id="p3">
             დროზე!!
         </p>
-        <p style="top: 440px">
-            მიწერე, სანამ მასწავლებელი შეგამჩნევს.
-        </p>
-        <p style="top: 200px">
-            ოე
-        </p>
-        <p style="top: 280px">
-            ბებსონა
-        </p>
-        <p style="top: 320px">
-            რეხვო
-        </p>
-        <p style="top: 360px">
-            ყენო
-        </p>
-        <p style="top: 400px">
-            ლიკუნა
-        </p>
-        <p style="top: 440px">
-            ანო
-        </p>
-        <p style="top: 250px">
-            დროზე, ათ სიტყვაში!!
-        </p>
-        <p> </p>
-        <p style="top: 225px">
-            აირჩიე ფურცლის ბოლოს რას დადღაბნი.
-        </p>
-
-        <img src="ghost.png" alt="ghost"
-             style="width:400px";
-        "length:400px";>
-
-        <p style="top: 230px">
-            სპორტის გაკვეთილიდან კლასში ბრუნდები
-        </p>
-        <p style="top: 290px">
-            მერხები ცარიელია.
-        </p>
-        <p style="top: 350px">
-            კლასში არავინაა.
-        </p>
-        <p  style="top: 410px">
-            და ახალი ცარცები!!!
-        </p>
-        <p style="top: 250px">
-            დროზე!!!
-        </p>
-        <p style="top: 310px">
-            დახატე, სანამ მარტო ხარ.
-        </p>
-
-        <p class="show" style="top: 300px">
-            სამასწავლებლოდან შემოსული უცხო დამრიგებელი, მთელ კლასს გთხოვთ,
-        <p class="show" style="top: 328px">
-            გადაშალოთ რვეულები და პირველ ხაზზე დაწეროთ თქვენი საყვარელი საგანი.
-
-        </p>
-
-
+        <p style="top: 440px" onclick="showSection('s2', 's1')">მიწერე, სანამ მასწავლებელი შეგამჩნევს.</p>
     </div>
 
+    <div class="section" id="s2">
+        <p style="top: 200px" id="p5" class="btn show">ოე</p>
+        <p style="top: 280px">ბებსონა</p>
+        <p style="top: 320px">რეხვო</p>
+        <p style="top: 360px">ყენო</p>
+        <p style="top: 400px">ლიკუნა</p>
+        <p style="top: 440px">ანო</p>
+    </div>
+    <p style="top: 250px">დროზე, ათ სიტყვაში!!</p>
+    <p></p>
+    <p style="top: 225px">აირჩიე ფურცლის ბოლოს რას დადღაბნი.</p>
+
+    <div id="letter">
+        <img class="img-btn show" src="ghost.png" alt="ghost" id="ghostmini">
+        <img class="img-btn show" src="star.png" alt="star" id="starmini">
+        <img class="img-btn show" src="noliki.png" alt="noliki" id="nolikimini">
+        <img class="img-btn show" src="hearts.png" alt="hearts" id="heartsmini">
+    </div>
+
+
+    <p style="top: 230px">სპორტის გაკვეთილიდან კლასში ბრუნდები</p>
+    <p style="top: 290px">მერხები ცარიელია.</p>
+    <p style="top: 350px">კლასში არავინაა.</p>
+    <p style="top: 410px">და ახალი ცარცები!!!</p>
+    <p style="top: 250px">დროზე!!!</p>
+    <p style="top: 310px">დახატე, სანამ მარტო ხარ.</p>
+
+    <p style="top: 300px">
+        სამასწავლებლოდან შემოსული უცხო დამრიგებელი, მთელ კლასს გთხოვთ,
+    <p style="top: 328px">
+        გადაშალოთ რვეულები და პირველ ხაზზე დაწეროთ თქვენი საყვარელი საგანი.
+    </p>
+
+
+</div>
+
+<canvas id="canvas"></canvas>
+
+<script src="WickBrush-main/WickBrush.js"></script>
+<script src="WickBrush-main/brushes/basicSmooth.js"></script>
+<script>
+    let brush = new WickBrush({
+        canvas: canvas,
+        size: 5,
+    });
+</script>
+<script>
+
+    const buttons = document.getElementsByClassName('btn');
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function (event) {
+            typewriter(document.getElementById(event.currentTarget.dataset.target));
+        });
+    }
+    const imgButtons = document.getElementsByClassName('img-btn');
+    for (let i = 0; i < imgButtons.length; i++) {
+        imgButtons[i].addEventListener('click', function (event) {
+            let images = event.currentTarget.parentNode.children;
+            for (let j = 0; j < images.length; j++) {
+                if (images[j] !== event.currentTarget) images[j].classList.remove('show');
+            }
+            event.currentTarget.style.left = "200px";
+            event.currentTarget.style.transitionDelay = "1s";
+        });
+    }
+    const typewriter = function (el) {
+        let txt = el.innerText;
+        el.innerHTML = '';
+        el.classList.add('show');
+        let i = 0;
+
+        function writeChart() {
+            el.innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(writeChart, 200);
+        };
+        writeChart();
+    }
+
+    const showSection = function (targetId, sourceId) {
+        document.getElementById(targetId).classList.add('show');
+        document.getElementById(sourceId).classList.remove('show');
+    }
+</script>
 </body>
 </html>
