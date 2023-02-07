@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "BPG Glaho Arial", sans-serif;
+}
+
+.btn {
+    cursor: pointer;
+    opacity: .3;
+    transition: opacity .3s;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+#desktop {
+    background-image: url(background1.png);
+    width: 1644px;
+    height: 800px;
+    background-size: cover;
+    position: relative;
+
+}
+
+
+p {
+    position: absolute;
+    left: 420px;
+    font-size: 20px;
+    display: none;
+}
+
+p.show {
+    display: block;
+}
+
+#letter {
+    height: 105px;
+    width: 824px;
+    position: absolute;
+    left: 420px;
+    top: 420px;
+    display: none;
+}
+
+#letter.show {
+    display: block;
+}
+
+#letter img {
+    position: absolute;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 1s;
+    top: 0;
+}
+
+#ghostmini {
+    left: 0;
+}
+
+#heartsmini {
+    left: 100px;
+}
+
+#starmini {
+    left: 200px;
+}
+
+#nolikimini {
+    left: 300px;
+}
+
+#letter img.show {
+    opacity: 1;
+}
+
+.section {
+    display: none;
+}
+
+.section.show {
+    display: block;
+}
+
+#canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #777;
+    width: 400px;
+    height: 300px;
+    display: none;
+}
+
+#canvas.show {
+    display: block;
+}
