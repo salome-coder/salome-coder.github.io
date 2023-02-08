@@ -4,6 +4,7 @@ body {
     justify-content: center;
     height: 100vh;
     font-family: "BPG Glaho Arial", sans-serif;
+    background-color: #0271bc;
 }
 
 .btn {
@@ -17,11 +18,12 @@ body {
 }
 
 #desktop {
-    background-image: url(background1.png);
+    background-image: url(layout.jpg);
     width: 1644px;
-    height: 800px;
+    height: 925px;
     background-size: cover;
     position: relative;
+
 
 }
 
@@ -100,3 +102,4 @@ p.show {
 #canvas.show {
     display: block;
 }
+.papermini

@@ -10,22 +10,30 @@
 <body>
 <div id="desktop">
     <div class="section show" id="s1">
-        <p style="top: 200px" class="btn show" onclick="typeTexts('p1')">გაკვეთილზე ცდილობ, გვერდითა მერხზე მჯდომ მეგობარს ხმა
+        <p style="top: 280px" class="btn show" onclick="typeTexts('p1')">გაკვეთილზე ცდილობ, გვერდითა მერხზე მჯდომ მეგობარს ხმა
             მიაწვდინო.</p>
 
-        <p style="top: 260px" class="btn" id="p1" onclick="typeTexts('p')">რვეულიდან ფურცელს ხევ.</p>
-        <p style="top: 320px" class="btn" id="p2" onclick="typeTexts('p')">პატარა ნაგლეჯზე იწყებ წერილის წერას.</p>
-        <p style="top: 380px" class="btn" id="p3" onclick="typeTexts('p')"> დროზე!!  </p>
-        <p style="top: 440px" class="btn" id="p4" onclick="typeTexts('p')" onclick="showSection('s2', 's1')">მიწერე, სანამ მასწავლებელი შეგამჩნევს.</p>
+        <p style="top: 340px" class="btn" id="p1" onclick="typeTexts('p2')">რვეულიდან ფურცელს ხევ.</p>
+        <p style="top: 400px" class="btn" id="p2" onclick="typeTexts('p3')">პატარა ნაგლეჯზე იწყებ წერილის წერას.</p>
+        <p style="top: 460px" class="btn" id="p3" onclick="typeTexts('p4')"> დროზე!!  </p>
+        <p style="top: 520px" class="btn" id="p4" onclick="showSection('s2','s1')">მიწერე, სანამ მასწავლებელი შეგამჩნევს.</p>
     </div>
 
     <div class="section" id="s2">
-        <p style="top: 200px" class="btn show" id="p5" onclick="typeTexts(['p6', 'p7'])">ოე</p>
-        <p style="top: 280px" class="btn" id="p6" onclick="typeTexts('p')">ბებსონა</p>
-        <p style="top: 320px">რეხვო</p>
-        <p style="top: 360px">ყენო</p>
-        <p style="top: 400px">ლიკუნა</p>
-        <p style="top: 440px">ანო</p>
+        <p style="top: 280px" class="btn show" id="p5" onclick="typeTexts(['p6','p7','p8','p9','p10'])">ოე</p>
+        <p style="top: 360px" class="btn" onclick="savename(this)" id="p6">ბებსონა</p>
+        <p style="top: 400px" class="btn" onclick="savename(this)" id="p7">რეხვო</p>
+        <p style="top: 440px" class="btn" onclick="savename(this)" id="p8">ყენო</p>
+        <p style="top: 480px" class="btn" onclick="savename(this)" id="p9">ლიკუნა</p>
+        <p style="top: 520px" class="btn" onclick="savename(this)" id="p10">ანო</p>
+    </div>
+    <div class="section" id="s3">
+        <p class="show" style="top: 260px" id="nickname1"></p>
+        <textarea style="top: 780px">  </textarea>
+        <img src="paper.png" alt="paper" id="papermini">
+
+
+
     </div>
     <p style="top: 250px">დროზე, ათ სიტყვაში!!</p>
     <p></p>

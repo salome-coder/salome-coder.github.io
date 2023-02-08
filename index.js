@@ -1,14 +1,30 @@
+var nickname= "";
 function typeTexts(id) {
     if (typeof id === "object" ) {
-
+        for(let i=0; i<id.length;i++){
+           typeTexts(id[i]);
+        }
     } else if (typeof id === "string") {
         let el = document.getElementById(id);
         let txt = el.innerText;
         el.innerHTML = "";
         el.classList.add('show');
-        new TypeIt(el, {strings: txt}).go();
+        new TypeIt(el, {
+            strings: txt
+        }).go().destroy();
     }
+
 }
+  function showSection  (targetId, sourceId) {
+    document.getElementById(targetId).classList.add('show');
+    document.getElementById(sourceId).classList.remove('show');
+}
+function savename (el){
+    nickname=el.innerHTML;
+    document.getElementById("nickname1").innerHTML="ოე "+nickname;
+    showSection('s3', 's2')
+}
+
 
 /*
 const buttons = document.getElementsByClassName('btn');
