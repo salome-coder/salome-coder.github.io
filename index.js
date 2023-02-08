@@ -25,6 +25,28 @@ function savename (el){
     showSection('s3', 's2')
 }
 
+const letterText = document.getElementById('letter-text');
+letterText.addEventListener('input', function (ev) {
+   let words = this.value.split(' ');
+   if (words.length > 10) this.value = words.slice(0, 9).join(' ');
+});
+letterText.addEventListener('keypress', function (ev) {
+    if (ev.key==="Enter"){
+        showSection('letter', 's3')
+    }
+
+});
+const imgButtons = document.getElementsByClassName('img-btn');
+for (let i = 0; i < imgButtons.length; i++) {
+    imgButtons[i].addEventListener('click', function (event) {
+        let images = event.currentTarget.parentNode.children;
+        for (let j = 0; j < images.length; j++) {
+            if (images[j] !== event.currentTarget) images[j].classList.remove('show');
+        }
+        event.currentTarget.style.left = "200px";
+        event.currentTarget.style.transitionDelay = "0s";
+    });
+}
 
 /*
 const buttons = document.getElementsByClassName('btn');

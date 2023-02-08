@@ -27,6 +27,23 @@ body {
 
 }
 
+textarea {
+    position: absolute;
+    top: 370px;
+    left: 602px;
+    height: 166px;
+    width: 299px;
+    background-color: transparent;
+    border: none;
+    font-size: 19px;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+textarea:focus, textarea:active {
+    border: none;
+}
 
 p {
     position: absolute;
@@ -44,21 +61,24 @@ p.show {
     width: 824px;
     position: absolute;
     left: 420px;
-    top: 420px;
+    top: 270px;
     display: none;
 }
 
 #letter.show {
     display: block;
 }
+#letter p{
+    top: 0;
 
+}
 #letter img {
     position: absolute;
     height: 100%;
     cursor: pointer;
     opacity: 0;
     transition: all 1s;
-    top: 0;
+    top: 105;
 }
 
 #ghostmini {
@@ -102,4 +122,10 @@ p.show {
 #canvas.show {
     display: block;
 }
-.papermini
+#papermini {
+    height: 237px;
+    width: 547px;
+    position: absolute;
+    left: 560px;
+    top: 330px;
+}
