@@ -57,11 +57,11 @@ p.show {
 }
 
 #letter {
-    height: 105px;
+    height: 115px;
     width: 824px;
     position: absolute;
-    left: 420px;
-    top: 270px;
+    left: 490px;
+    top: 457px;
     display: none;
 }
 
@@ -69,7 +69,8 @@ p.show {
     display: block;
 }
 #letter p{
-    top: 0;
+    top: -177px;
+    left: 80px;
 
 }
 #letter img {
@@ -86,15 +87,15 @@ p.show {
 }
 
 #heartsmini {
-    left: 100px;
+    left: 150px;
 }
 
 #starmini {
-    left: 200px;
+    left: 290px;
 }
 
 #nolikimini {
-    left: 300px;
+    left: 470px;
 }
 
 #letter img.show {
@@ -111,12 +112,11 @@ p.show {
 
 #canvas {
     position: absolute;
-    left: 0;
-    top: 0;
-    background-color: #777;
+    left: 663px;
+    top: 350px;
+    background-color: transparent;
     width: 400px;
     height: 300px;
-    display: none;
 }
 
 #canvas.show {
@@ -128,4 +128,12 @@ p.show {
     position: absolute;
     left: 560px;
     top: 330px;
+}
+#dapamini {
+    height: 393px;
+    width: 639px;
+    position: absolute;
+    left: 567px;
+    top: 311px;
+}
 }

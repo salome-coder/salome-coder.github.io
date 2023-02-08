@@ -45,6 +45,9 @@ for (let i = 0; i < imgButtons.length; i++) {
         }
         event.currentTarget.style.left = "200px";
         event.currentTarget.style.transitionDelay = "0s";
+        setTimeout(function(){
+            showSection('s4','letter')
+        },3000)
     });
 }
 

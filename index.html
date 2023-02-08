@@ -10,13 +10,15 @@
 <body>
 <div id="desktop">
     <div class="section show" id="s1">
-        <p style="top: 280px" class="btn show" onclick="typeTexts('p1')">გაკვეთილზე ცდილობ, გვერდითა მერხზე მჯდომ მეგობარს ხმა
+        <p style="top: 280px" class="btn show" onclick="typeTexts('p1')">გაკვეთილზე ცდილობ, გვერდითა მერხზე მჯდომ
+            მეგობარს ხმა
             მიაწვდინო.</p>
 
         <p style="top: 340px" class="btn" id="p1" onclick="typeTexts('p2')">რვეულიდან ფურცელს ხევ.</p>
         <p style="top: 400px" class="btn" id="p2" onclick="typeTexts('p3')">პატარა ნაგლეჯზე იწყებ წერილის წერას.</p>
-        <p style="top: 460px" class="btn" id="p3" onclick="typeTexts('p4')"> დროზე!!  </p>
-        <p style="top: 520px" class="btn" id="p4" onclick="showSection('s2','s1')">მიწერე, სანამ მასწავლებელი შეგამჩნევს.</p>
+        <p style="top: 460px" class="btn" id="p3" onclick="typeTexts('p4')"> დროზე!! </p>
+        <p style="top: 520px" class="btn" id="p4" onclick="showSection('s2','s1')">მიწერე, სანამ მასწავლებელი
+            შეგამჩნევს.</p>
     </div>
 
     <div class="section" id="s2">
@@ -35,7 +37,7 @@
         <p style="top: 580px" class="btn show" id="p11" onclick="typeTexts('p12')">დროზე, ათ სიტყვაში!!</p>
 
     </div>
-    <div id="letter" >
+    <div id="letter">
         <p class="btn show" id="p12">აირჩიე ფურცლის ბოლოს რას დადღაბნი.</p>
         <img class="img-btn show" src="ghost.png" alt="ghost" id="ghostmini">
         <img class="img-btn show" src="star.png" alt="star" id="starmini">
@@ -43,21 +45,25 @@
         <img class="img-btn show" src="hearts.png" alt="hearts" id="heartsmini">
     </div>
 
-<div class="section" id="s4">
-    <p style="top: 280px"class="btn" id="p13" onclick="typeTexts('p14')">სპორტის გაკვეთილიდან კლასში ბრუნდები</p>
-    <p style="top: 340px" class="btn" id="p14" onclick="typeTexts('p15')">მერხები ცარიელია.</p>
-    <p style="top: 400px"class="btn" id="p15" onclick="typeTexts('p16')">კლასში არავინაა.</p>
-    <p style="top: 460px"class="btn" id="p16" onclick="typeTexts('p17')">და ახალი ცარცები!!!</p>
-    <p style="top: 520px"class="btn" id="p17" onclick="showSection('s5','s4')">დროზე!!!</p>
-</div>
+    <div class="section" id="s4">
+        <p style="top: 280px" class="btn show" id="p13" onclick="typeTexts('p14')">სპორტის გაკვეთილიდან კლასში
+            ბრუნდები.</p>
+        <p style="top: 340px" class="btn" id="p14" onclick="typeTexts('p15')">მერხები ცარიელია.</p>
+        <p style="top: 400px" class="btn" id="p15" onclick="typeTexts('p16')">კლასში არავინაა.</p>
+        <p style="top: 460px" class="btn" id="p16" onclick="typeTexts('p17')">და ახალი ცარცები!!!</p>
+        <p style="top: 520px" class="btn" id="p17" onclick="showSection('s5','s4')">დროზე!!!</p>
+    </div>
     <div class="section" id="s5">
-    <p style="top: 280px">დახატე, სანამ მარტო ხარ.</p>
+        <p class="show" style="top: 280px">დახატე, სანამ მარტო ხარ.</p>
+        <img src="dapa.png" alt="dapa" id="dapamini">
+        <canvas id="canvas"></canvas>
+
     </div>
 
 
 </div>
 
-<canvas id="canvas"></canvas>
+
 <script src="WickBrush-main/WickBrush.js"></script>
 <script src="WickBrush-main/brushes/basicSmooth.js"></script>
 <script>
